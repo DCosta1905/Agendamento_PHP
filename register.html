@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="register.css" rel="stylesheet" type="text/css">
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="register">
+    <h1>Cadastro</h1>
+    <form action="register.php" method="post" autocomplete="off">
+      <label for="username">
+        <i class="fas fa-user"></i>
+      </label>
+      <input type="text" name="username" placeholder="Username" id="username" required>
+      <label for="password">
+        <i class="fas fa-lock"></i>
+      </label>
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <label for="email">
+        <i class="fas fa-envelope"></i>
+      </label>
+      <input type="email" name="email" placeholder="Email" id="email" required>
+      <a href="index.html">Já Possui uma conta? Faça o Login</a>
+      <input type="submit" value="Cadastre-se">
+    </form>
+  </div>
+</body>
+
+</html>
