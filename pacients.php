@@ -19,6 +19,7 @@ if(!isset( $_SESSION["loggedin"])){
 			<div>
 				<h1>Site - Fisioterapeuta Monica Oliveira</h1>
 				<a href="home.php" class="icons"><i class="fas fa-home"></i>Home</a>
+        <a href="atendimentos.php"><i class="fa-solid fa-notes-medical"></i>Atendimentos</a>
 				<a href="logout.php" class="icons"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
@@ -42,9 +43,9 @@ if(!isset( $_SESSION["loggedin"])){
 			echo "<table>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
+                <th>Nome</th>
                 <th>CPF</th>
-                <th>Action</th>
+                <th>Ações</th>
             </tr>";
 				while( $row = $result->fetch_assoc() ) {
 					echo "<tr>

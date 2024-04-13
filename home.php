@@ -25,7 +25,9 @@ if (!isset($_SESSION['loggedin'])) {
     <div>
       <h1>Site - Fisioterapeuta Monica Oliveira</h1>
       <a href="pacients.php"><i class="fas fa-user-circle"></i>Pacientes</a>
+      <a href="atendimentos.php"><i class="fa-solid fa-notes-medical"></i>Atendimentos</a>
       <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+      <a href="agenda.php"><i class="fa-solid fa-calendar"></i>Agenda</a>
     </div>
   </nav>
   <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
@@ -35,6 +37,7 @@ if (!isset($_SESSION['loggedin'])) {
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-RK7jK_M&#x2F;l9x1P4t-2CgoFRvmyw_zFw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
 </div>
+
 
 </body>
 

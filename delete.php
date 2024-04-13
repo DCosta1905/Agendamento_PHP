@@ -6,19 +6,7 @@ if (!isset($_SESSION["loggedin"])) {
     exit;
 }
 
-// Database Connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "phplogin";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include_once './conexao.php';
 // Check if the 'id' parameter is present in the URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
